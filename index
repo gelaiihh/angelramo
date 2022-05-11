@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form validation</title>
+</head>
+<body>
+<div class="container">
+    <form id="form" class="form" autocomplete="off">
+        <h1></h1> <span id="spanAni">REGISTER NOW</span>
+        &nbsp;
+        <div class="form-control">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="fname" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"  placeholder="Enter first name"> 
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lname" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"  placeholder="Enter last name">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <small>Error message</small>
+        </div>
+       
+        <td>
+          Male: <input type="radio" name="gender" value="male">
+          &nbsp;
+          Female: <input type="radio" name="gender" value="female">
+          </td>
+      </tr>
+      <br> </br>
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="password2">Confirm Passsword:</label>
+            <input type="password" id="password2" placeholder="Enter password again">
+            <small>Error message</small>
+        </div>
+       
+            <input type="checkbox" id="agreeToTerms" name="agreeToTerms" value="agreed"> I agree with the terms & conditions.
+           
+        <button type="submit">Submit</button>
+        <div class="signup-link">
+            Already have an account? <a href="">Login.</a>
+         </div>
+    </form>
+</div>
+ 
+    <script src="index.js"></script>
+</body>
+</html>
